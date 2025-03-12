@@ -1,0 +1,9 @@
+#RewriteEngine on
+#RewriteBase /php_oop_poems/api
+
+RewriteEngine On
+
+RewriteRule ^authors\/(.+)\/poems\/(.+)$ ?entity=poem&information=text&authorName=$1&title=$2 [NC,L]
+RewriteRule ^authors\/(.+)\/poems$ ?entity=author&information=poems&name=$1 [NC,L]
+RewriteRule ^authors/(.+)$ ?entity=author&information=info&name=$1 [NC,L]
+RewriteRule ^authors$ ?entity=catalog&information=authors [NC,L]

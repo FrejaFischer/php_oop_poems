@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "7665cdef-9f01-4037-b765-36dbdf089631",
+		"name": "poem_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39187887"
+	},
+	"item": [
+		{
+			"name": "get all authors",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/authors",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get author by id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/authors/emily-dickinson",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"authors",
+						"emily-dickinson"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get author by id not found",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/authors/tommy-nope",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"authors",
+						"tommy-nope"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get authors poems by id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/authors/Emily-Dickinson/poems",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"authors",
+						"Emily-Dickinson",
+						"poems"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get authors poems by id not found",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/authors/tommy-nope/poems",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"authors",
+						"tommy-nope",
+						"poems"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get poem",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/authors/Emily-Dickinson/poems/Because-I-could-not-stop-for-Death",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"authors",
+						"Emily-Dickinson",
+						"poems",
+						"Because-I-could-not-stop-for-Death"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get poem poem not found",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/authors/Emily-Dickinson/poems/hello-me",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"authors",
+						"Emily-Dickinson",
+						"poems",
+						"hello-me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get poem author not found",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/authors/tommy-nope/poems/Because-I-could-not-stop-for-Death",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"authors",
+						"tommy-nope",
+						"poems",
+						"Because-I-could-not-stop-for-Death"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
